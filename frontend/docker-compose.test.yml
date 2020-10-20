@@ -5,5 +5,5 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile-test
-s    volumes:
+    volumes:
       - .:/code
