@@ -14,4 +14,4 @@ jobs:
         working-directory: frontend
         run: docker-compose --file docker-compose.test.yml up -d
       - name: Test with pytest
-        run: docker-compose run corrections python -m pytest
+        run: docker-compose --file docker-compose.test.yml run corrections python -m pytest
